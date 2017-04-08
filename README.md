@@ -18,4 +18,6 @@ make
 make run
 ````
 
+While watching, press space to stop and c to continue.
+
 Special thanks to [/u/mncke](https://www.reddit.com/user/mncke) for diff archive.
