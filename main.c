@@ -3,8 +3,8 @@
 #include <allegro5/allegro_color.h>
 #include <allegro5/allegro_image.h>
 
-#define START_X     0
-#define START_Y     0
+#define START_X		0
+#define START_Y		0
 #define PIXEL_WIDTH 1
 #define SPEED 500
 
@@ -57,6 +57,7 @@ int main()
         fread(&b, sizeof(int), 1, diffs);
         fread(&c, sizeof(int), 1, diffs);
         fread(&d, sizeof(int), 1, diffs);
+		i++;
 
         if(b < START_X || c < START_Y || b > range_end_x || c > range_end_y)
             continue;
@@ -81,7 +82,6 @@ int main()
 				}
 			}
         }
-        i++;
     }
 
     fclose(diffs);
